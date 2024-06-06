@@ -1,0 +1,108 @@
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flexbox;
+}
+
+section{
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Section styles */
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#intro {
+  text-align: center;
+  
+}
+
+#intro img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#features {
+  display: flex;
+  flex-wrap: wrap; /* Allow features to wrap on smaller screens */
+  justify-content: space-around; /* Distribute features evenly */
+}
+#features ul{
+  width: 80%;
+  margin: 10px auto;
+}
+
+li img{
+  width: 80%;
+  height: 80%;
+}
+
+#features h3{
+  width: 80%;
+  margin: 30px auto 10px auto;
+  text-align: left;
+}
+
+#features li {
+  width: 80%; /* Adjust width for responsive layout */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  list-style: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #eee;
+}
+
+/* Responsiveness (media queries): Use these as a starting point and adjust for your specific needs */
+
+@media (max-width: 768px) {
+  header,
+  main,
+  footer {
+    padding: 10px;
+  }
+
+  .features li {
+    width: 100%; /* Features stack vertically on smaller screens */
+  }
+}
